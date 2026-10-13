@@ -6,36 +6,42 @@
 
 _Each prompt is a reusable step. Chain them: the output of one becomes the input to the next._
 
-## Prompt chain: [name your flow]
+## Prompt chain: The Trust-to-Conversion Chain
 
-### Step 1: [purpose]
+### Step 1: Expand, build new screens in a strict sequence
 ```
-[prompt text, with {{variables}} for the parts you swap]
+Build the next phase of this app in a strict sequence:
+1. Add a screen "Trust Verification Modal".
+2. Add a screen "Schedule 10-Min Intro Call".
+3. Navigation: write the logic so the Trust Verification Modal links to the Schedule 10-Min Intro Call.
+Build these in order so the Trust Verification Modal is the anchor for the booking flow.
 ```
-**Expects in:** _____
-**Produces out:** _____
 
-### Step 2: [purpose]
+### Step 2: Behavior, hard-code the states
 ```
-[prompt text]
+Apply the following logic constraints to the provider profile and booking flow:
+- Use skeleton screens for external reviews and portfolio asset loading states.
+- If no data is present, show the empty state: "Early Adopter Perks: Be among the first to book this verified new provider and lock in introductory rates.".
+- On fetch failure, trigger the error state: "Unable to verify external credentials right now. Platform-backed Alloy Trust Guarantee still applies.".
+Maintain the same design language throughout and tether all behavior strictly to these rules.
 ```
-**Expects in:** _____
-**Produces out:** _____
 
-### Step 3: [purpose]
+### Step 3: Refine, one surgical polish
 ```
-[prompt text]
+The Sticky Trust & Conversion Bar needs a professional modern marketplace polish.
+1. Start by listing the 3 biggest gaps in typography and spacing compared to top conversion benchmarks.
+2. Once you've identified those, resize the headers and update the primary CTA and live proxy trust metrics (e.g., '14 people safely booked this month · Verified ID') to match.
+Don't change anything else in the project or touch the underlying logic.
 ```
-**Expects in:** _____
-**Produces out:** _____
 
 ## Reusable techniques learned
 
-- _____
-- _____
+- Naming the exact element stops the AI touching the rest
+- Passing the README as context keeps the chain consistent
+- Incremental tweaks allow the prototype to reach the final, intended results
 
 ## What broke (and the fix)
 
 _Where a single mega-prompt failed and chaining fixed it._
 
-_____
+Focusing on a specific element or workflow can help focus requirements/prompts on just that piece
