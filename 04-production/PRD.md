@@ -36,4 +36,4 @@ _What gets stored, what gets tracked._
 
 ## Open questions
 
-How will we scale automated external review imports without manual verification overhead once the marketplace expands beyond the MVP?
+How can we handle importing external reviews at scale without creating a huge manual review bottleneck later?
